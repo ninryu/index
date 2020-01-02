@@ -9,7 +9,7 @@ $(document).ready(() => {
   $('.form-control-lg').keypress(e => {
     if (e.which == 13) {
       query = $('.form-control').val();
-      window.location.href = "https://google.com/search?q=" + query;
+      window.location.href = "https://duckduckgo.com/search?q=" + query;
     }
   });
 });
@@ -91,8 +91,8 @@ function createCalendar(url) {
 }
 
 function startTime() {
-  var days = ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'];
-  var months = ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'];
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var months = ['January', 'Februar', 'Mars', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
