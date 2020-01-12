@@ -9,7 +9,7 @@ $(document).ready(() => {
   $('.form-control-lg').keypress(e => {
     if (e.which == 13) {
       query = $('.form-control').val();
-      window.location.href = "https://duckduckgo.com/search?q=" + query;
+      window.location.href = "https://duckduckgo.com/?q=" + query;
     }
   });
 });
